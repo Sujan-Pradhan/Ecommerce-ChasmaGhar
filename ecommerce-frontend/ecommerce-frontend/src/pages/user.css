@@ -1,0 +1,59 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css");
+
+.dashboard-main-content__stat-wrapper {
+  color: black !important;
+  padding: 5px;
+}
+
+.dashboard-main-content__stat-wrapper:hover
+  .dashboard-main-content__stat-description {
+  background-position: bottom;
+}
+
+.dashboard-main-content__stat-content {
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  height: 240px;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+.dashboard-main-content__stat-headband {
+  height: 170px;
+}
+
+.dashboard-main-content__stat-headband i {
+  padding: 20px;
+  display: inline-block;
+  border: 3px solid #17ad49;
+  border-radius: 50px;
+  background-color: white;
+  color: #17ad49;
+  font-size: 50px;
+}
+
+.dashboard-main-content__stat-headband i.fa-users {
+  padding: 20px 18px;
+}
+
+.dashboard-main-content__stat-headband__title {
+  margin-top: 50px;
+}
+
+.dashboard-main-content__stat-description {
+  padding-top: 10px;
+  height: 40px;
+
+  background: linear-gradient(to top, #17ad49 50%, white 50%);
+  background-size: 200%;
+  background-position: top;
+  transition: all 0.3s ease;
+}
+
+.dashboard-main-content__stat-underline {
+  height: 11px;
+  border-radius: 0px 0px 5px 5px; /* top left, top right, bottom right, bottom left */
+  background: #17ad49;
+}
