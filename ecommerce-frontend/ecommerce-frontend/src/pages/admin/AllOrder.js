@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import AdminSideBar from "./AdminSideBar";
 import { allorder } from "./apiIndex";
@@ -42,6 +43,7 @@ const AllOrder = () => {
                   <th>City</th>
                   <th>phone</th>
                   <th>Amount</th>
+                  <th>Details</th>
                 </tr>
               </thead>
               <tbody>
@@ -53,6 +55,14 @@ const AllOrder = () => {
                     <td>{c.city}</td>
                     <td>{c.phone}</td>
                     <td>{c.totalPrice}</td>
+                    <td>
+                      <Link
+                        className="btn btn-primary"
+                        to={`/orderdetails/${c._id}`}
+                      >
+                        Detail
+                      </Link>
+                    </td>
                   </tr>
                 ))}
               </tbody>

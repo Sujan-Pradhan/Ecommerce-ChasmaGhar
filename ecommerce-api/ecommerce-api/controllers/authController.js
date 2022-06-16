@@ -59,12 +59,12 @@ exports.postEmailConfirmation = (req, res) => {
       if (error || !user) {
         return res
           .staus(400)
-          .json({ error: "We are unable to find valid user for this token" });
+          .json({ error: "Unable to find valid user for this token" });
       }
       //check if user is already verified
       if (user.isVerified) {
         return res.status(400).json({
-          error: `Dear ${user.name}, Your Email: ${user.email} has already been verified, Login to continue`,
+          error: `${user.name}, Email: ${user.email} has already been verified, Login to continue`,
         });
       }
       //save the verified user
@@ -87,7 +87,7 @@ exports.signIn = async (req, res) => {
   const user = await User.findOne({ email });
   if (!user) {
     return res.status(400).json({
-      error: `Oops! The email is not found in our system. Please try another.`,
+      error: `Sorry! The email is not found in our system. Please try another.`,
     });
   }
   //if email found then check the password
@@ -140,7 +140,7 @@ exports.forgetPassword = async (req, res) => {
     html: `<h2>Reset Your Password</h2>
   <button><a href = ${url}>Click to Reset</a></button>`,
   });
-  res.json({ message: "password reset link has been sent to your email" });
+  res.json({ message: "Password reset link has been sent to your email" });
 };
 //reset password
 exports.resetPassword = async (req, res) => {
@@ -159,7 +159,7 @@ exports.resetPassword = async (req, res) => {
   if (!user) {
     return res
       .status(400)
-      .json({ error: "We are unable to find a valid user for this token" });
+      .json({ error: "Unable to find a valid user for this token" });
   }
   user.password = req.body.password;
   user = await user.save();
@@ -218,7 +218,9 @@ exports.resendVerification = async (req, res) => {
   http:\/\/${req.headers.host}\/api\/confirmation\/${token.token}`,
     //http:localhost:5000/api/confirmation/984uenf39
   });
-  res.json({ message: "Account verification link has been sent to your mail" });
+  res.json({
+    message: "Account verification link has been sent to your email",
+  });
 };
 //authorization
 exports.requireSignin = expressJwt({

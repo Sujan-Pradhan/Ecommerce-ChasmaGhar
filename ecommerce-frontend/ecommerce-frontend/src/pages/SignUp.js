@@ -49,7 +49,7 @@ const SignUp = () => {
       className="alert alert-info"
       style={{ display: success ? "" : "none" }}
     >
-      New Account is created, verify your email first to continue
+      Account is created, verify your email first to continue.......
     </div>
   );
   return (
@@ -58,57 +58,6 @@ const SignUp = () => {
       <div className="container">
         <div className="d-flex justify-content-center">
           <div className="col-md-7 mt-4 mb-3 p-3">
-            {/* <form>
-              {showError()}
-              {showSuccess()}
-              <div className="col-12 mb-3">
-                <label htmlFor="fname">FullName</label>
-                <input
-                  type="text"
-                  name="fname"
-                  id="fname"
-                  placeholder="FullName"
-                  className="form-control"
-                  onChange={handleChange("name")}
-                  value={name}
-                />
-              </div>
-
-              <div className="col-12 mb-3">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="example@gmail.com"
-                  className="form-control"
-                  onChange={handleChange("email")}
-                  value={email}
-                />
-              </div>
-              <div className="col-12 mb-3">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  name="pass"
-                  id="password"
-                  placeholder="***********"
-                  className="form-control"
-                  onChange={handleChange("password")}
-                  value={password}
-                />
-              </div>
-
-              <div className="col-6">
-                <button
-                  className="btn btn-primary form-control"
-                  onClick={handleSubmit}
-                >
-                  Signup
-                </button>
-              </div>
-            </form> */}
-
             <div class="container">
               <form id="contact" action="" method="post">
                 {showError()}

@@ -29,7 +29,7 @@ const AdminSideBar = () => {
           }}
         >
           <img
-            src="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/268965516_1314488088973638_7352152989116679440_n.jpg?stp=dst-jpg_p720x720&_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=pYRbaPhvufMAX_Dd1lr&_nc_ht=scontent.fktm3-1.fna&oh=00_AT_2mxd4Rq5pVxefom78LGpimCrdxv444AxUNsPG-5YVHQ&oe=62A4B1CB"
+            src="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/268965516_1314488088973638_7352152989116679440_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=hkIb4Hh2zzUAX-EBS1Q&_nc_ht=scontent.fktm3-1.fna&oh=00_AT_PVlV_GzLyhHG6zd9g2R4DXxSSI77EjPUIgea48gWWmA&oe=62B08F4B"
             alt=""
             style={{
               top: "59px",

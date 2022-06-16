@@ -31,7 +31,7 @@ const Carousel = () => {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active">
+          <div className="carousel-item">
             <img
               src="https://www.novaeyewear.com/skin/frontend/novacombos/default/images/new-banner1.jpg"
               className="d-block w-100 img-fluid custom-img"
@@ -45,9 +45,9 @@ const Carousel = () => {
               alt="..."
             />
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item active">
             <img
-              src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2019/06/yximgixc-1560324797.jpg"
+              src="https://static1.lenskart.com/media/desktop/img/June22/8_crystal.jpg"
               className="d-block w-100 img-fluid custom-img"
               alt="..."
             />

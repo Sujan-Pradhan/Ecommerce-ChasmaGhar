@@ -83,7 +83,8 @@ const Deals = () => {
       size >= 0 &&
       size >= limit && (
         <center>
-          <button onClick={loadMore} className="btn btn-warning">
+          <br />
+          <button onClick={loadMore} className="btn btn-primary">
             Load More Products
           </button>
         </center>
@@ -109,7 +110,7 @@ const Deals = () => {
               categories={categories}
               handleFilters={(filters) => handleFilters(filters, "category")}
             />
-            <h5>Prices Range</h5>
+            <h5>Price Range</h5>
             <RadioBox
               prices={prices}
               handleFilters={(filters) =>

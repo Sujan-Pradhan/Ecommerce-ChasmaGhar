@@ -82,9 +82,8 @@ const AllProduct = () => {
                     </td>
                     <td>
                       <Link
-                        to="#"
+                        to={`/updateproduct/${p._id}`}
                         className="btn btn-primary"
-                        onClick={() => updateProduct(p._id)}
                       >
                         Edit
                       </Link>

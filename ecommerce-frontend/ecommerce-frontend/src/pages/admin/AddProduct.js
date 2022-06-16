@@ -89,7 +89,7 @@ const AddProduct = () => {
       className="alert alert-info"
       style={{ display: success ? "" : "none" }}
     >
-      New product added
+      Product added
     </div>
   );
   // categories.map((c,i)=>{
@@ -105,53 +105,6 @@ const AddProduct = () => {
             <AdminSideBar />
           </div>
           <div className="col-md-6 mt-4">
-            {/* <form className='shadow-lg p-3'>
-       <h2 className='text-muted'>Add Products</h2>
-       {showError()}
-       {showSuccess()}
-       <div className='mb-3'>
-        <label htmlFor='productName'>Product Name</label>
-        <input type='text' id='productName' className='form-control'
-         onChange={handleChange('product_name')} value={product_name} />
-       </div>
-       <div className='mb-3'>
-        <label htmlFor='productPrice'>Product Price</label>
-        <input type='number' id='productPrice' className='form-control'
-         onChange={handleChange('product_price')} value={product_price} />
-       </div>
-       <div className='mb-3'>
-        <label htmlFor='productQty'>Stock Quantity</label>
-        <input type='number' id='productQty' className='form-control'
-         onChange={handleChange('countInStock')} value={countInStock} />
-       </div>
-       <div className='mb-3'>
-        <label htmlFor='productDesc'>Product Description</label>
-        <textarea id='productDesc' className='form-control'
-         onChange={handleChange('product_description')} value={product_description}></textarea>
-       </div>
-       <div className='mb-3'>
-        <label htmlFor='productImg'>Product Image</label>
-        <input type='file' id='productImg' className='form-control' accept='image/*'
-         onChange={handleChange('product_image')} />
-       </div>
-       <div className='mb-3'>
-        <label htmlFor='category'>Category</label>
-        <select className='form-control' onChange={handleChange('category')}>
-         <option></option>
-         {
-          categories.map((c,i)=>(
-           <option key={i} value={c._id}>{c.category_name}</option>
-          ))
-         }
-        </select>
-       </div>
-       <div className='mb-3'>
-        <button className='btn btn-primary' onClick={handleSubmit}>
-         Add New Product
-        </button>
-       </div>
-      </form> */}
-
             <div class="container">
               <form id="contact" action="" method="post">
                 {showError()}
