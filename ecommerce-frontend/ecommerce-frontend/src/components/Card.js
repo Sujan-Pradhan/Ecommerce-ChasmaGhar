@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <>
       <div className="col">
-        <div className="card shadow-lg">
+        <div className="card shadow-lx">
           <img
             src={`http://localhost:5000/${show.product_image}`}
             className="card-img-top"

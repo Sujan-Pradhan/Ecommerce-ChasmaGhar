@@ -97,20 +97,42 @@ const Deals = () => {
       <Navbar />
       <div className="container-fluid">
         <h2>
-          <marquee behavior="alternate">Deals and Promotions</marquee>
+          <marquee behavior="alternate" className="text-dark">
+            Offers and Deals !!!!!!!
+          </marquee>
         </h2>
 
-        <div className="row mt-5 mb-3">
+        <div className="row mt-5 mb-3 mr-4">
           <div
             className="col-md-2 p-2 ms-3"
-            style={{ backgroundColor: "#f5f5f5" }}
+            style={{ backgroundColor: "#22b8cf" }}
           >
-            <h5>Categories</h5>
+            <div
+              style={{
+                backgroundColor: "#66d9e8",
+                borderRadius: "8px",
+                color: "#212529",
+              }}
+            >
+              <center>
+                <h5>Categories</h5>
+              </center>
+            </div>
             <CheckBox
               categories={categories}
               handleFilters={(filters) => handleFilters(filters, "category")}
             />
-            <h5>Price Range</h5>
+            <div
+              style={{
+                backgroundColor: "#66d9e8",
+                borderRadius: "8px",
+                color: "#212529",
+              }}
+            >
+              <center>
+                <h5>Price Range</h5>
+              </center>
+            </div>
             <RadioBox
               prices={prices}
               handleFilters={(filters) =>

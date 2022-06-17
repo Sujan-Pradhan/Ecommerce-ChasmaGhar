@@ -13,7 +13,7 @@ const AdminDashboard = () => {
           </div>
           <div className="col-md-6 mt-5">
             <h1>Hello, your in admin dashboard</h1>
-            <h6 className="text-muted">
+            <h6 className="text-dark">
               Here you can add category, add product, manage orders, prodcuts as
               well customer
             </h6>

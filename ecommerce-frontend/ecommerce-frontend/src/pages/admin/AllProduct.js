@@ -39,11 +39,11 @@ const AllProduct = () => {
             <AdminSideBar />
           </div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center text-muted">
+            <h2 className="text-center text-dark">
               Here are total {products.length} products
             </h2>
-            <table className="table table-bordered table-primary">
-              <thead>
+            <table className="table table-striped table-primary">
+              <thead className="thead">
                 <tr>
                   <th>Product Name</th>
                   <th>Product Price</th>

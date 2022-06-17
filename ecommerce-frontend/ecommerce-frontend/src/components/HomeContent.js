@@ -47,7 +47,7 @@ const HomeContent = () => {
         </div>
       </div>
 
-      <div className="features">
+      <div className="features text-dark">
         <div className="fea">
           <h4>Fast & Free Delivery</h4>
           <p>

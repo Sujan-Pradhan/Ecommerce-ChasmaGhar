@@ -38,8 +38,8 @@ exports.userRegistration = async (req, res) => {
     subject: "Email Verification Link",
     text: `Hello, \n \n Please confirm your email by copying the below link :\n\n 
   http:\/\/${req.headers.host}\/api\/confirmation\/${token.token}`,
-    html: `<h2>Verify Your Email</h2>
-  <button><a href = ${url}>Verify</a></button>`,
+    html: `<h2>Verify Email</h2>
+  <button><a href = ${url}>Verify Email</a></button>`,
     //http:localhost:5000/api/confirmation/984uenf39
   });
   res.send(user);
@@ -137,8 +137,8 @@ exports.forgetPassword = async (req, res) => {
     subject: "Password Reset Link",
     text: `Hello, \n \n Please reset your password by copying the below link :\n\n 
   http:\/\/${req.headers.host}\/api\/resetpassword\/${token.token}`,
-    html: `<h2>Reset Your Password</h2>
-  <button><a href = ${url}>Click to Reset</a></button>`,
+    html: `<h2>Reset Password</h2>
+  <button><a href = ${url}>Reset</a></button>`,
   });
   res.json({ message: "Password reset link has been sent to your email" });
 };

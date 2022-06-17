@@ -30,11 +30,11 @@ const AllOrder = () => {
             <AdminSideBar />
           </div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-muted text-center">
+            <h2 className="text-dark text-center">
               Total Orders : {orders.length}
             </h2>
-            <table className="table table-bordered table-primary">
-              <thead>
+            <table className="table table-striped table-primary">
+              <thead className="thead-dark">
                 <tr>
                   <th>Order Id</th>
                   <th>Country</th>
@@ -46,7 +46,7 @@ const AllOrder = () => {
                   <th>Details</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="font-weight-bold">
                 {orders.map((c, i) => (
                   <tr key={i}>
                     <td>{c._id}</td>

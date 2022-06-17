@@ -29,10 +29,10 @@ const AllCustomer = () => {
             <AdminSideBar />
           </div>
           <div className="col-md-8 mt-4" style={{ background: "#f1f3f5" }}>
-            <h2 className="text-muted text-center">
+            <h2 className="text-dark text-center">
               Total Customers : {customers.length}
             </h2>
-            <table className="table table-bordered table-primary">
+            <table className="table table-striped table-primary">
               <thead>
                 <tr>
                   <th>Name</th>
